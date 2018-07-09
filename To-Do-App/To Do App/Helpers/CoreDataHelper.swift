@@ -22,12 +22,14 @@ struct CoreDataHelper {
     }()
     
     static func newTask() -> Task {
+        print("Creating a new Task")
         let task = NSEntityDescription.insertNewObject(forEntityName: "Task", into: context) as! Task
         
         return task
     }
     
     static func saveTask() {
+        print("Attempting to save")
         do {
             try context.save()
         } catch let error {
@@ -42,10 +44,12 @@ struct CoreDataHelper {
     }
     
     static func retrieveTasks() -> [Task]{
+        print("Retrieving Tasks...")
         do {
             let fetchRequest = NSFetchRequest<Task>(entityName: "Task")
             let results = try context.fetch(fetchRequest)
             
+            print("Fetch Success")
             return results
         } catch let error {
             print("Could not fetch \(error.localizedDescription)")

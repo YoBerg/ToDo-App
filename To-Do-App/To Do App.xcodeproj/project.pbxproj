@@ -7,18 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA95B99220F403960072F1B2 /* To-Do-App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA95B99020F403950072F1B2 /* To-Do-App.xcdatamodeld */; };
 		FAEABFD820EFE20200C794AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEABFD720EFE20200C794AC /* AppDelegate.swift */; };
 		FAEABFDD20EFE20200C794AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAEABFDB20EFE20200C794AC /* Main.storyboard */; };
 		FAEABFDF20EFE20300C794AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAEABFDE20EFE20300C794AC /* Assets.xcassets */; };
 		FAEABFE220EFE20300C794AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAEABFE020EFE20300C794AC /* LaunchScreen.storyboard */; };
 		FAEABFF120F006EF00C794AC /* tasksListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEABFF020F006EF00C794AC /* tasksListViewController.swift */; };
 		FAEABFF420F007B300C794AC /* listTasksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEABFF320F007B300C794AC /* listTasksCell.swift */; };
-		FAEABFF720F0101D00C794AC /* MakeSchoolNotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAEABFF520F0101D00C794AC /* MakeSchoolNotes.xcdatamodeld */; };
 		FAEABFFA20F010BA00C794AC /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEABFF920F010BA00C794AC /* CoreDataHelper.swift */; };
 		FAEABFFC20F1409500C794AC /* displayTasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEABFFB20F1409500C794AC /* displayTasksViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA95B99120F403950072F1B2 /* To-Do-App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "To-Do-App.xcdatamodel"; sourceTree = "<group>"; };
 		FAEABFD420EFE20200C794AC /* To Do App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To Do App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAEABFD720EFE20200C794AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAEABFDC20EFE20200C794AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -27,7 +28,6 @@
 		FAEABFE320EFE20300C794AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAEABFF020F006EF00C794AC /* tasksListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tasksListViewController.swift; sourceTree = "<group>"; };
 		FAEABFF320F007B300C794AC /* listTasksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listTasksCell.swift; sourceTree = "<group>"; };
-		FAEABFF620F0101D00C794AC /* MakeSchoolNotes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MakeSchoolNotes.xcdatamodel; sourceTree = "<group>"; };
 		FAEABFF920F010BA00C794AC /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		FAEABFFB20F1409500C794AC /* displayTasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = displayTasksViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,7 +70,7 @@
 				FAEABFDE20EFE20300C794AC /* Assets.xcassets */,
 				FAEABFE020EFE20300C794AC /* LaunchScreen.storyboard */,
 				FAEABFE320EFE20300C794AC /* Info.plist */,
-				FAEABFF520F0101D00C794AC /* MakeSchoolNotes.xcdatamodeld */,
+				FA95B99020F403950072F1B2 /* To-Do-App.xcdatamodeld */,
 			);
 			path = "To Do App";
 			sourceTree = "<group>";
@@ -174,9 +174,9 @@
 				FAEABFFA20F010BA00C794AC /* CoreDataHelper.swift in Sources */,
 				FAEABFF420F007B300C794AC /* listTasksCell.swift in Sources */,
 				FAEABFFC20F1409500C794AC /* displayTasksViewController.swift in Sources */,
+				FA95B99220F403960072F1B2 /* To-Do-App.xcdatamodeld in Sources */,
 				FAEABFD820EFE20200C794AC /* AppDelegate.swift in Sources */,
 				FAEABFF120F006EF00C794AC /* tasksListViewController.swift in Sources */,
-				FAEABFF720F0101D00C794AC /* MakeSchoolNotes.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,13 +376,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		FAEABFF520F0101D00C794AC /* MakeSchoolNotes.xcdatamodeld */ = {
+		FA95B99020F403950072F1B2 /* To-Do-App.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				FAEABFF620F0101D00C794AC /* MakeSchoolNotes.xcdatamodel */,
+				FA95B99120F403950072F1B2 /* To-Do-App.xcdatamodel */,
 			);
-			currentVersion = FAEABFF620F0101D00C794AC /* MakeSchoolNotes.xcdatamodel */;
-			path = MakeSchoolNotes.xcdatamodeld;
+			currentVersion = FA95B99120F403950072F1B2 /* To-Do-App.xcdatamodel */;
+			path = "To-Do-App.xcdatamodeld";
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

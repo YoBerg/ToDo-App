@@ -39,7 +39,7 @@
                                             <color key="textColor" red="0.37211496540348155" green="0.51279402897701809" blue="0.65769749365482233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OHR-oM-dgl">
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OHR-oM-dgl">
                                             <rect key="frame" x="0.0" y="47" width="375" height="56"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
@@ -93,7 +93,7 @@
                     <navigationItem key="navigationItem" title="Tasks" id="DOd-XP-Xiz">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="4W1-lD-yEw">
                             <connections>
-                                <segue destination="bde-FM-RN3" kind="show" identifier="addNote" id="ALK-jW-XGr"/>
+                                <segue destination="bde-FM-RN3" kind="show" identifier="addTask" id="ALK-jW-XGr"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -141,12 +141,12 @@
                     <navigationItem key="navigationItem" title="Title" id="XQo-pX-7Ah">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="uqu-xg-zYs">
                             <connections>
-                                <segue destination="mi7-cx-s0t" kind="unwind" unwindAction="unwindWithSegue:" id="ep8-Mj-ECF"/>
+                                <segue destination="mi7-cx-s0t" kind="unwind" identifier="cancel" unwindAction="unwindWithSegue:" id="1vi-uU-aU7"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Save" id="Jcd-u2-WER">
                             <connections>
-                                <segue destination="mi7-cx-s0t" kind="unwind" unwindAction="unwindWithSegue:" id="jX6-t7-5y9"/>
+                                <segue destination="mi7-cx-s0t" kind="unwind" identifier="save" unwindAction="unwindWithSegue:" id="hyP-wW-2iS"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -179,6 +179,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ALK-jW-XGr"/>
+        <segue reference="TAd-RX-EM9"/>
     </inferredMetricsTieBreakers>
 </document>

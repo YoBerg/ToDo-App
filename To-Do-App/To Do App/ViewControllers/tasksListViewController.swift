@@ -12,7 +12,7 @@ import UIKit
 class ListTasksViewController: UITableViewController{
     
     @IBAction func unwindWithSegue(_ segue: UIStoryboardSegue) {
-        
+        tasks = CoreDataHelper.retrieveTasks()
     }
     
     var tasks = [Task]() {
@@ -41,9 +41,12 @@ class ListTasksViewController: UITableViewController{
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        print("Displaying cell(s)...")
         let cell = tableView.dequeueReusableCell(withIdentifier: "listTaskCell", for: indexPath) as! ListTasksCell
         
         let task = tasks[indexPath.row]
+        if task.title != nil {
+        }
         cell.taskTitleLabel.text = task.title
         // 1
         cell.modificationTimeLabel.text = task.modificationTime?.convertToString() ?? "unknown"
@@ -61,7 +64,7 @@ class ListTasksViewController: UITableViewController{
         guard let identifier = segue.identifier else { return }
         
         switch identifier {
-        case "displayNote":
+        case "displayTask":
             // 1
             guard let indexPath = tableView.indexPathForSelectedRow else { return }
             

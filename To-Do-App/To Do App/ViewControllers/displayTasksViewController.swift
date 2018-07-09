@@ -36,7 +36,7 @@ class displayTasksViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let identifier = segue.identifier else { return }
-        
+        print("Heading back!")
         switch identifier {
         case "save" where task != nil:
             task?.title = titleTextField.text ?? ""
